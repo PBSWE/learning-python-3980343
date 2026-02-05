@@ -28,4 +28,4 @@ today = datetime.now()
 
 # Get the current time
 t = datetime.time(datetime.now())
-print(t)
+print(t) 
