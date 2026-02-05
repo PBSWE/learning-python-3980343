@@ -2,13 +2,17 @@
 # Working with modules of code
 
 # import the math module, which contains features for working with mathematics
+import math
 
-
+# print('Square root of 16 is', math.sqrt(16))
 # import a specific part of the module so you can refer to it more easily
+from math import pi
 
+# print(pi)
 
 # import a module and give it a different name
-
+import random as r
+# print(r.randint(100, 200))
 
 # the math module contains lots of pre-built functions
 
@@ -22,6 +26,8 @@
 # try some of the math functions for yourself here:
 
 # Use the 3rd party tabulate module to print tabulated data:
+# command: pip install tabulate (ok)
+from tabulate import tabulate
 
 # Sample data
 data = [
@@ -31,4 +37,6 @@ data = [
   ["Keyboard", 59.99, 89]
 ]
 
+print(tabulate(data, headers='firstrow', tablefmt='fancy_grid'))
 # Create a formatted table
+print(tabulate(data, headers='firstrow', tablefmt='double_outline'))

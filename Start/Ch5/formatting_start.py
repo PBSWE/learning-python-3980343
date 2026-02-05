@@ -1,9 +1,7 @@
-
-#
 # Example file for formatting time and date output
 # LinkedIn Learning Python course by Joe Marini
 #
-
+print('='*15)
 
 from datetime import datetime
 
