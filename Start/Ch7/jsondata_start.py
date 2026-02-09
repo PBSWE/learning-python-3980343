@@ -3,12 +3,16 @@
 #
 
 import urllib.request 
-
+import json
 
 # Open the URL and read the data
-
+wurl = urllib.request.urlopen('https://uselessfacts.jsph.pl/api/v2/facts/random')
+print('Result code:', wurl.getcode())
 
 # Read the JSON data from the source
-
+data = wurl.read()
+print(data)
 
 # Print the content of the 'text' field
+theJSON = json.loads(data)
+print(theJSON['text'])
