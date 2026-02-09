@@ -33,7 +33,7 @@ c = calendar.TextCalendar(calendar.SUNDAY)
 # a team meeting on the first Friday of every month.
 # To figure out what days that would be for each month,
 # we can use this script:
-print('Team meetingd will be on:')
+print('Team meetings will be on:')
 for m in range(1, 13):
   cal = calendar.monthcalendar(2026, m)
   weekone = cal[0]
